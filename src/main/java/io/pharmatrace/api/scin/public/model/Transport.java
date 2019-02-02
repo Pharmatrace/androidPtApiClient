@@ -17,7 +17,7 @@ import io.swagger.annotations.*;
 import com.google.gson.annotations.SerializedName;
 
 @ApiModel(description = "")
-public class Transport extends Transaction {
+public class Transport {
   
   @SerializedName("timestamp")
   private Long timestamp = null;
@@ -102,7 +102,7 @@ public class Transport extends Transaction {
   public String toString()  {
     StringBuilder sb = new StringBuilder();
     sb.append("class Transport {\n");
-    sb.append("  " + super.toString()).append("\n");
+    
     sb.append("  timestamp: ").append(timestamp).append("\n");
     sb.append("  txUid: ").append(txUid).append("\n");
     sb.append("  termsId: ").append(termsId).append("\n");
